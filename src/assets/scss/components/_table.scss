@@ -1,0 +1,12 @@
+.v-table {
+  table {
+    @include font(1.5rem);
+    th {
+      background: rgba(6, 88, 153, 0.2);
+      color: $main_dark;
+    }
+    td {
+      color: $gray500;
+    }
+  }
+}
