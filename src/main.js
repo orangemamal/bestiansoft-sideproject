@@ -9,10 +9,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
+import { VDateInput } from 'vuetify/labs/VDateInput'
 
 const app = createApp(App);
 
 app.component('font-awesome-icon', FontAwesomeIcon)
+app.component('VDateInput', VDateInput)
 library.add(fas)
 library.add(far)
 

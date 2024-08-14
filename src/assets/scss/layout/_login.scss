@@ -38,6 +38,14 @@ main {
           .v-btn {
             font-weight: $bold;
           }
+          .checkbox_small {
+            .v-icon {
+              font-size: 2rem;
+            }
+            .v-label {
+              @include font(1.4rem);
+            }
+          }
         }
       }
     }

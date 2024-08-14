@@ -27,4 +27,9 @@ button {
     @include font(1.6rem);
     font-weight: $bold;
   }
+  &.v-btn {
+    &.negative {
+      background: $gray600 !important;
+    }
+  }
 }

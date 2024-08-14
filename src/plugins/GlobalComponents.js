@@ -5,6 +5,7 @@ import TitleComp from "@/components/TitleComp.vue"
 
 import TableComp from "@/components/DetailComponents/TableComp.vue"
 import PaginationComp from "@/components/DetailComponents/PaginationComp.vue"
+import TabComp from "@/components/DetailComponents/TabComp.vue"
 
 
 const GlobalComponentsPlugin = {
@@ -16,6 +17,7 @@ const GlobalComponentsPlugin = {
 
     app.component("TableComp", TableComp)
     app.component("PaginationComp", PaginationComp)
+    app.component("TabComp", TabComp)
   }
 };
 

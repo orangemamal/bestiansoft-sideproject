@@ -40,5 +40,15 @@
       @include font(1.2rem);
     }
   }
+  .v-radio {
+    .v-icon {
+      font-size: 2.4rem;
+    }
+  }
+  .v_date_input {
+    .v-field__input {
+      padding: 0 0.6rem;
+    }
+  }
 }
 

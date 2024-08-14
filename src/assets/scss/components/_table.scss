@@ -1,3 +1,13 @@
+.table_count {
+  @include font(1.6rem);
+  color: $gray400;
+  margin-bottom: 1.6rem;
+  text-align: right;
+  span {
+    font-weight: $bold;
+    color: $gray800;
+  }
+}
 .v-table {
   table {
     @include font(1.5rem);
@@ -7,6 +17,21 @@
     }
     td {
       color: $gray500;
+      &.function {
+        & > div {
+          padding: 0.8rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .v_date_input {
+            max-width: 16rem;
+          }
+          & > span {
+            color: $black;
+            margin-right: 2.4rem;
+          }
+        }
+      }
     }
   }
 }

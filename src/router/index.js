@@ -21,9 +21,51 @@ const routes = [
         children: [
           {
             path: "",
-            name: "typeFirst",
+            name: "TypeFirst",
             components: {
-              mainContentType: () => import('@/views/content/contentsComponent/typeFirst.vue'),
+              mainContentType: () => import('@/views/content/contentsComponent/TypeFirst.vue'),
+            }
+          },
+          {
+            path: "2",
+            name: "TypeSecond",
+            components: {
+              mainContentType: () => import('@/views/content/contentsComponent/TypeSecond.vue'),
+            }
+          },
+          {
+            path: "3",
+            name: "TypeThird",
+            components: {
+              mainContentType: () => import('@/views/content/contentsComponent/TypeThird.vue'),
+            }
+          },
+          {
+            path: "4",
+            name: "TypeFourth",
+            components: {
+              mainContentType: () => import('@/views/content/contentsComponent/TypeFourth.vue'),
+            }
+          },
+          {
+            path: "5",
+            name: "TypeFifth",
+            components: {
+              mainContentType: () => import('@/views/content/contentsComponent/TypeFifth.vue'),
+            }
+          },
+          {
+            path: "6",
+            name: "TypeSixth",
+            components: {
+              mainContentType: () => import('@/views/content/contentsComponent/TypeSixth.vue'),
+            }
+          },
+          {
+            path: "7",
+            name: "TypeSeventh",
+            components: {
+              mainContentType: () => import('@/views/content/contentsComponent/TypeSeventh.vue'),
             }
           },
         ],
