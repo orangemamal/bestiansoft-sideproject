@@ -47,12 +47,6 @@
 
       </TableComp>
     </article>
-
-    <article class="bottom_button right">
-      <v-btn variant="tonal" class="negative" prepend-icon="mdi-trash-can-outline">
-        삭제
-      </v-btn>
-    </article>
   </section>
 </template>
 

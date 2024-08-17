@@ -11,7 +11,8 @@
               append-inner-icon="mdi-magnify"
               density="compact"
               label="Search templates"
-              variant="solo"
+              variant="outlined"
+              rounded
               hide-details
               single-line
               clearable
@@ -22,24 +23,26 @@
 
           <div class="input_group select">
             <v-select
-                density="compact"
-                v-model="select"
-                :hint="`${select.state}, ${select.abbr}`"
-                :items="items"
-                item-title="state"
-                item-value="abbr"
-                label="상세검색"
-                hide-details
-                persistent-hint
-                return-object
-                single-line
-                class="select_input"
+              rounded
+              variant="solo"
+              density="compact"
+              v-model="select"
+              :hint="`${select.state}, ${select.abbr}`"
+              :items="items"
+              item-title="state"
+              item-value="abbr"
+              label="상세검색"
+              hide-details
+              persistent-hint
+              return-object
+              single-line
+              class="select_input"
             ></v-select>
           </div>
         </v-card-text>
 
         <span class="function_group">
-          <v-btn class="my_page" variant="text">마이페이지</v-btn>
+          <v-btn class="my_page" density="comfortable" icon="mdi-account-circle"></v-btn>
 
           <span class="client_name"><span>{{ "홍길동" }}</span> 의원</span>
 

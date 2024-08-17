@@ -7,6 +7,7 @@ import * as directives from 'vuetify/directives'
 import { aliases as faAliases, fa } from 'vuetify/iconsets/fa'
 import { aliases as mdiAliases, mdi } from 'vuetify/iconsets/mdi'
 import { aliases as mdiSvgAliases, mdi as mdiSvg } from 'vuetify/iconsets/mdi-svg'
+import { VCalendar } from 'vuetify/labs/VCalendar'
 
 const aliases = {
     ...mdiAliases,
@@ -14,8 +15,13 @@ const aliases = {
     ...mdiSvgAliases,
 }
 
+const allComponents = {
+    ...components,
+    VCalendar,
+}
+
 export default createVuetify({
-    components,
+    components: allComponents,
     directives,
     icons: {
         defaultSet: 'mdi',

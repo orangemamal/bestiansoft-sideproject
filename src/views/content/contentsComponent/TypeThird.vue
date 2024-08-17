@@ -94,7 +94,6 @@ import TableComp from "@/components/DetailComponents/TableComp.vue";
 import PaginationComp from "@/components/DetailComponents/PaginationComp.vue";
 
 export default {
-  components: {PaginationComp, TableComp},
   data: () => ({
     select: { state: 'Florida', abbr: 'FL' },
     items: [

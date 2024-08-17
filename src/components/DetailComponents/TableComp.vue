@@ -86,7 +86,7 @@ export default {
     items: {
       type: Array,
       default: () => []
-    }
+    },
   },
   data: () => ({
     desserts: [

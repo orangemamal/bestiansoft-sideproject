@@ -10,11 +10,13 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { VDateInput } from 'vuetify/labs/VDateInput'
+import Vue3Signature from "vue3-signature"
 
 const app = createApp(App);
 
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.component('VDateInput', VDateInput)
+app.component('Vue3Signature', Vue3Signature)
 library.add(fas)
 library.add(far)
 

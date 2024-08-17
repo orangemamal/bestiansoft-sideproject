@@ -68,6 +68,48 @@ const routes = [
               mainContentType: () => import('@/views/content/contentsComponent/TypeSeventh.vue'),
             }
           },
+          {
+            path: "8",
+            name: "TypeEighth",
+            components: {
+              mainContentType: () => import('@/views/content/contentsComponent/TypeEighth.vue'),
+            }
+          },
+          {
+            path: "9",
+            name: "TypeNinth",
+            components: {
+              mainContentType: () => import('@/views/content/contentsComponent/TypeNinth.vue'),
+            }
+          },
+          {
+            path: "10",
+            name: "TypeTenth",
+            components: {
+              mainContentType: () => import('@/views/content/contentsComponent/TypeTenth.vue'),
+            }
+          },
+          {
+            path: "11",
+            name: "TypeEleventh",
+            components: {
+              mainContentType: () => import('@/views/content/contentsComponent/TypeEleventh.vue'),
+            }
+          },
+          {
+            path: "12",
+            name: "TypeTwelfth",
+            components: {
+              mainContentType: () => import('@/views/content/contentsComponent/TypeTwelfth.vue'),
+            }
+          },
+          {
+            path: "13",
+            name: "TypeThirteenth",
+            components: {
+              mainContentType: () => import('@/views/content/contentsComponent/TypeThirteenth.vue'),
+            }
+          },
         ],
       },
     ],

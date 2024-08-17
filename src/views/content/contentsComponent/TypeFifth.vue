@@ -5,7 +5,7 @@
       <template #titleName>접수대기 상세화면</template>
     </TitleComp>
 
-    <article class="basic panel column">
+    <article class="basic panel">
       <div class="panel_bundle">
         <div class="panel_unit">
           <div class="input_group row">
@@ -102,8 +102,37 @@
             </div>
           </div>
         </div>
-      </div>
 
+        <div class="panel_unit">
+          <div class="input_group row">
+            <label>서명여부</label>
+            <div class="signature_wrap">
+              <SignaturePad />
+            </div>
+          </div>
+        </div>
+
+        <div class="panel_unit table">
+          <div class="input_group row">
+            <label>서명대상관리</label>
+            <div class="inner_table_wrap">
+              <div class="btn_wrap">
+                <v-btn
+                    prepend-icon="mdi-check"
+                    variant="tonal"
+                    class="search_btn"
+                >
+                  등록
+                </v-btn>
+              </div>
+              <InnerMultiTdTableComp />
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="basic button">
       <div class="panel_btn_bundle">
         <v-btn
             prepend-icon="mdi-checkbox-multiple-marked"
@@ -127,9 +156,10 @@
 <script>
 import TableComp from "@/components/DetailComponents/TableComp.vue";
 import PaginationComp from "@/components/DetailComponents/PaginationComp.vue";
+import InnerMultiTdTableComp from "@/components/DetailComponents/InnerMultiTdTableComp.vue";
 
 export default {
-  components: {PaginationComp, TableComp},
+  components: {InnerMultiTdTableComp, PaginationComp, TableComp},
   data: () => ({
     select: { state: 'Florida', abbr: 'FL' },
     items: [
