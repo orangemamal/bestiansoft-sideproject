@@ -5,7 +5,7 @@
       <template #titleName>동의서명</template>
     </TitleComp>
 
-    <article class="basic panel">
+    <article class="basic panel button">
       <div class="panel_bundle">
         <div class="panel_unit">
           <div class="input_group row">

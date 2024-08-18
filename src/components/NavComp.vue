@@ -53,8 +53,8 @@
 
           <div class="font_size_bundle">
             <span class="size">글자크기</span>
-            <v-icon icon="mdi-plus-circle" />
-            <v-icon icon="mdi-minus-circle" />
+            <v-icon icon="mdi-plus-box" />
+            <v-icon icon="mdi-minus-box" />
           </div>
         </span>
 

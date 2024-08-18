@@ -132,7 +132,7 @@
       </div>
     </article>
 
-    <article class="basic button">
+    <article class="basic button noneShadow">
       <div class="panel_btn_bundle">
         <v-btn
             prepend-icon="mdi-checkbox-multiple-marked"

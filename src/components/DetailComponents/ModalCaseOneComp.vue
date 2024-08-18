@@ -9,14 +9,14 @@
           <v-list :items="items" density="compact"></v-list>
           <div class="button_wrap">
             <v-btn
-              append-icon="mdi-redo"
+              prepend-icon="mdi-redo-variant"
               variant="outlined"
               rounded
             >
               추가
             </v-btn>
             <v-btn
-              prepend-icon="mdi-undo"
+              append-icon="mdi-undo-variant"
               variant="outlined"
               rounded
             >

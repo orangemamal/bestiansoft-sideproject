@@ -28,7 +28,7 @@
         <span>홍길동</span>
       </td>
 
-      <td class="btn_bundle">
+      <td class="table_btn_bundle">
         <v-btn
             prepend-icon="mdi-cached"
             variant="outlined"
@@ -67,7 +67,7 @@
         <span>홍길동</span>
       </td>
 
-      <td class="btn_bundle">
+      <td class="table_btn_bundle">
         <v-btn
             prepend-icon="mdi-cached"
             variant="outlined"

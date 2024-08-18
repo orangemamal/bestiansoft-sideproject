@@ -19,9 +19,9 @@
               <th>불어</th>
               <td colspan="6">
                 <v-text-field
-                  density="compact"
-                  variant="outlined"
-                  hide-details
+                    density="compact"
+                    variant="outlined"
+                    hide-details
                 ></v-text-field>
               </td>
             </tr>
@@ -66,26 +66,17 @@
 
     <template v-slot:actions>
       <v-btn variant="tonal">저장</v-btn>
-      <v-btn variant="tonal" class="negative" @click="close">취소</v-btn>
+      <v-btn variant="tonal" class="negative">취소</v-btn>
     </template>
   </v-card>
 </template>
 
 <script>
 export default {
-  props: {
-    toggle: Boolean,
-  },
-  data: () => ({
-  }),
-  methods: {
-    close() {
-      this.$emit("close");
-    }
-  }
+  name: 'NewPopup',
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>

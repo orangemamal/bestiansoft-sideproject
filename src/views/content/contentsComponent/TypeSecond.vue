@@ -24,6 +24,9 @@
                 hide-details
             ></v-text-field>
           </div>
+        </div>
+
+        <div class="panel_unit">
           <div class="input_group row">
             <label>서명여부</label>
             <v-select
@@ -41,9 +44,7 @@
                 class="select_input"
             ></v-select>
           </div>
-        </div>
 
-        <div class="panel_unit">
           <div class="input_group multi row">
             <label>요청자</label>
             <v-text-field
@@ -57,6 +58,9 @@
                 hide-details
             ></v-text-field>
           </div>
+        </div>
+
+        <div class="panel_unit">
           <div class="input_group row">
             <label>요청자</label>
             <v-radio-group hide-details inline>

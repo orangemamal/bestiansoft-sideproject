@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router';
 import LoginComp from "@/views/LoginComp.vue"
 import FrameComp from "@/views/FrameComp.vue"
 
+import NewPopup from "@/components/DetailComponents/NewPopup.vue"
+
 const routes = [
   {
     path: '/',
@@ -113,6 +115,11 @@ const routes = [
         ],
       },
     ],
+  },
+  {
+    path: "/NewPopup",
+    name: "NewPopup",
+    component: NewPopup,
   },
 ];
 

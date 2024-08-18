@@ -61,18 +61,9 @@
         <ModalCaseFiveComp :toggle="caseFive" @close="caseFive = false" />
       </v-dialog>
 
-      <v-dialog
-        v-model="caseSix"
-        max-width="600"
-      >
-        <template v-slot:activator="{ props: activatorProps }">
-          <v-btn v-bind="activatorProps">
-            popup case 1
-          </v-btn>
-        </template>
-        <ModalCaseSixComp :toggle="caseSix" @close="caseSix = false" />
-      </v-dialog>
-
+      <v-btn @click="openPopup">
+        popup case 1
+      </v-btn>
     </article>
   </section>
 </template>
@@ -83,10 +74,25 @@ export default {
     caseOne: false,
     caseTwo: false,
     caseThree: false,
-    caseFour: true,
+    caseFour: false,
     caseFive: false,
-    caseSix: false,
+    popupOpen: false,
   }),
+  methods: {
+    openPopup() {
+      const url = `${window.location.origin}/NewPopup`;
+      const width = 600;
+      const height = 400;
+      const left = (window.screen.width - width) / 2;
+      const top = (window.screen.height - height) / 2;
+
+      window.open(
+        url,
+        '_blank',
+        `width=${width},height=${height},top=${top},left=${left},resizable=yes,scrollbars=yes`
+      );
+    },
+  }
 }
 </script>
 

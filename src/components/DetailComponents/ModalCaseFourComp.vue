@@ -33,16 +33,16 @@
           <v-list :items="items" density="compact"></v-list>
           <div class="button_wrap">
             <v-btn
-              append-icon="mdi-redo"
-              variant="outlined"
-              rounded
+                prepend-icon="mdi-redo-variant"
+                variant="outlined"
+                rounded
             >
               추가
             </v-btn>
             <v-btn
-              prepend-icon="mdi-undo"
-              variant="outlined"
-              rounded
+                append-icon="mdi-undo-variant"
+                variant="outlined"
+                rounded
             >
               삭제
             </v-btn>

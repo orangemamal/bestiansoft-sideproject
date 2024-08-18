@@ -15,7 +15,7 @@ import ModalCaseTwoComp from "@/components/DetailComponents/ModalCaseTwoComp.vue
 import ModalCaseThreeComp from "@/components/DetailComponents/ModalCaseThreeComp.vue"
 import ModalCaseFourComp from "@/components/DetailComponents/ModalCaseFourComp.vue"
 import ModalCaseFiveComp from "@/components/DetailComponents/ModalCaseFiveComp.vue"
-import ModalCaseSixComp from "@/components/DetailComponents/ModalCaseSixComp.vue"
+import ModalCaseSixComp from "@/components/DetailComponents/NewPopup.vue"
 
 const GlobalComponentsPlugin = {
   install(app) {

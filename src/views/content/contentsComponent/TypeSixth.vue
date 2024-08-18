@@ -65,7 +65,7 @@
             </div>
             <v-btn
                 variant="tonal"
-                prepend-icon="mdi-check-decagram"
+                prepend-icon="mdi-checkbox-marked-circle-plus-outline"
             >
               출석
             </v-btn>

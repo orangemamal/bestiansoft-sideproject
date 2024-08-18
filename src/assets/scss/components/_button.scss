@@ -1,6 +1,9 @@
 button {
   &.v-btn.v-btn--density-default {
     @include font(1.4rem);
+    i {
+      font-size: 2rem;
+    }
     &.v-btn--variant-tonal {
        background: $main_dark;
        color: $white;
