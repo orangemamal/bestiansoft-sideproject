@@ -112,6 +112,13 @@ const routes = [
               mainContentType: () => import('@/views/content/contentsComponent/TypeThirteenth.vue'),
             }
           },
+          {
+            path: "14",
+            name: "TestComp",
+            components: {
+              mainContentType: () => import('@/views/content/contentsComponent/TestComp.vue'),
+            }
+          },
         ],
       },
     ],

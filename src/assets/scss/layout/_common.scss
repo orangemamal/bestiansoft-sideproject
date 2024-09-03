@@ -1,4 +1,12 @@
+.v-list-item {
+  @include font(1.6rem);
+  .v-list-item-title {
+    @include font(1.6rem);
+  }
+}
+
 main {
+  @include font(1.5rem);
   .v-container {
     padding: 0;
   }
