@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import LoginComp from "@/views/LoginComp.vue"
 import FrameComp from "@/views/FrameComp.vue"
+import MainPageComp from "@/views/content/MainPageComp.vue"
+import LoginComp from "@/views/LoginComp.vue"
 
 import NewPopup from "@/components/DetailComponents/NewPopup.vue"
 
@@ -9,6 +10,10 @@ const routes = [
   {
     path: '/',
     component: LoginComp,
+  },
+  {
+    path: '/MainPageComp',
+    component: MainPageComp,
   },
   {
     path: '/MainComp',
