@@ -1,0 +1,28 @@
+#app {
+  .container {
+    footer {
+      display: flex;
+      justify-content: space-between;
+      background: $gray200;
+      padding: 2rem;
+      .left, .right {
+        display: flex;
+        align-items: center;
+        @include font(1.3rem);
+        color: #353434;
+      }
+      .left {
+        white-space: nowrap;
+        img {
+          margin-right: 1.6rem;
+        }
+      }
+      .right {
+        .client_name {
+          margin-right: 1.6rem;
+          width: 12rem;
+        }
+      }
+    }
+  }
+}

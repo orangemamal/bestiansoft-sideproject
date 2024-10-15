@@ -1,6 +1,7 @@
 import ContentsFrameComp from "@/views/ContentsFrameComp.vue"
 
 import NavComp from "@/components/NavComp.vue"
+import FooterComp from "@/components/FooterComp.vue"
 import TitleComp from "@/components/TitleComp.vue"
 
 import TableComp from "@/components/DetailComponents/TableComp.vue"
@@ -22,6 +23,7 @@ const GlobalComponentsPlugin = {
     app.component("ContentsFrameComp", ContentsFrameComp)
 
     app.component("NavComp", NavComp)
+    app.component("FooterComp", FooterComp)
     app.component("TitleComp", TitleComp)
 
     app.component("TableComp", TableComp)

@@ -57,13 +57,19 @@ nav {
               opacity: 1;
             }
           }
+          .logout {
+            margin-left: 0.8rem;
+            padding: 0;
+            width: 3.2rem;
+            height: 3.2rem;
+            .mdi-logout-variant {
+              font-size: 2rem;
+              color: $main_dark;
+            }
+          }
           .client_name {
             @include font(1.4rem);
-            margin-right: 0.8rem;
-            span {
-              color: $gray700;
-              font-weight: $bold;
-            }
+            width: 12rem;
           }
           .language_bundle {
             margin: 0 1.6rem;
@@ -143,22 +149,33 @@ nav {
               padding-top: 4.8rem;
               .v-sheet.v-theme--light {
                 display: none;
-                padding: 1.6rem 0 0.8rem;
-                ul {
+                padding: 1.6rem 0;
+                background: center / cover no-repeat url($img_path + "gnb_bg.jpg");
+                .sub_list_cover {
                   display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  li {
-                    @include font(1.5rem);
-                    color: $gray400;
-                    cursor: pointer;
-                    margin-bottom: 0.8rem;
-                    padding: 0.8rem 1.6rem;
-                    border-radius: 5rem;
-                    transition: all 0.3s;
-                    &:hover {
-                      background: $main_dark;
-                      color: $white;
+                  h3 {
+                    color: $gray300;
+                    @include font(3rem);
+                    width: 30vw;
+                    border-right: 1px solid $gray500;
+                    padding-left: 2.4rem;
+                    margin-right: 1.6rem;
+                  }
+                  ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    li {
+                      @include font(1.5rem);
+                      color: $gray300;
+                      cursor: pointer;
+                      margin-bottom: 0.8rem;
+                      padding: 0.8rem 1.6rem;
+                      border-radius: 5rem;
+                      transition: all 0.3s;
+                      &:hover {
+                        color: $white;
+                      }
                     }
                   }
                 }

@@ -2,6 +2,7 @@
   <div>
     <NavComp />
     <ContentsFrameComp />
+    <FooterComp />
   </div>
 </template>
 

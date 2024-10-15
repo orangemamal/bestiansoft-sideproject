@@ -44,7 +44,15 @@
         <span class="function_group">
           <v-btn class="my_page" density="comfortable" icon="mdi-account-circle"></v-btn>
 
-          <span class="client_name"><span>{{ "홍길동" }}</span> 의원</span>
+          <v-select
+            return-object
+            density="compact"
+            :items="['홍길동의원', '홍길동운영의원']"
+            variant="outlined"
+            hide-details
+            persistent-hint
+            class="client_name"
+          ></v-select>
 
           <div class="language_bundle">
             <v-btn variant="tonal">KblP</v-btn>
@@ -56,6 +64,12 @@
             <v-icon icon="mdi-plus-box" />
             <v-icon icon="mdi-minus-box" />
           </div>
+
+          <v-btn
+              class="logout"
+              density="comfortable"
+              icon="mdi-logout-variant"
+          ></v-btn>
         </span>
 
       </article>
@@ -83,14 +97,17 @@
 
             <v-main>
               <v-sheet>
-                <ul>
-                  <li>가나다라마바사</li>
-                  <li>가나다라마바사</li>
-                  <li>가나다라마바사</li>
-                  <li>가나다라마바사</li>
-                  <li>가나다라마바사</li>
-                  <li>가나다라마바사</li>
-                </ul>
+                <div class="sub_list_cover">
+                  <h3>대메뉴명</h3>
+                  <ul>
+                    <li>가나다라마바사</li>
+                    <li>가나다라마바사</li>
+                    <li>가나다라마바사</li>
+                    <li>가나다라마바사</li>
+                    <li>가나다라마바사</li>
+                    <li>가나다라마바사</li>
+                  </ul>
+                </div>
               </v-sheet>
             </v-main>
 
